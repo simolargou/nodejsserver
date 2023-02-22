@@ -301,7 +301,6 @@ img {
   box-shadow: var(--third-color); 0 -6px 8px inset;
   transform: scale(1.1);
   color:var(--second-color);
-  box-shadow: var(--second-color) 0 8px 6px inset;
 }
 
 .button:active {

@@ -48,8 +48,8 @@ textarea {
   max-width: 768px;
   margin: 150px auto;
   position: relative;
-  background: rgb(174,226,238);
-  background: radial-gradient(circle, rgba(174,226,238,1) 0%, rgba(148,187,233,1) 100%);
+  background: rgb(96,179,246);
+  background: linear-gradient(90deg, rgba(96,179,246,1) 0%, rgba(130,176,191,1) 35%, rgba(0,212,255,1) 100%);
 
 
 
