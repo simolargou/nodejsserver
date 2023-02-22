@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css/contact.css" />
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+      
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Simo</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="/home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="/about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="/skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="/work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="/contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+           
+            <ul class="nav">
+                <li onclick="showLogin()">Login</li>
+                <li onclick="showSignup()">Sign up</li>
+                <li onclick="showForgotPassword()">Forgot password</li>
+                <li onclick="showSubscribe()">Subscribe</li>
+                <li onclick="showContactUs()">Contact us</li>
+            </ul>
+            <div class="wrapper">
+                <div class="rec-prism">
+                    <div class="face face-top">
+                        <div class="content">
+                            <h2>Subscribe</h2>
+                            <small>Enter your email so we can send you the latest updates!</small>
+                            <form onsubmit="event.preventDefault()">
+                                <div class="field-wrapper">
+                                    <input type="text" name="email" placeholder="email">
+                                    <label>e-mail</label>
+                                </div>
+                                <div class="field-wrapper">
+                                    <input type="submit" onclick="showThankYou()">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="face face-front">
+                        <div class="content">
+                            <h2>Sign in</h2>
+                            <form onsubmit="event.preventDefault()">
+                                <div class="field-wrapper">
+                                    <input type="text" name="username" placeholder="username">
+                                    <label>username</label>
+                                </div>
+                                <div class="field-wrapper">
+                                    <input type="password" name="password" placeholder="password" autocomplete="new-password">
+                                    <label>password</label>
+                                </div>
+                                <div class="field-wrapper">
+                                    <input type="submit" onclick="showThankYou()">
+                                </div>
+                                <span class="psw" onclick="showForgotPassword()">Forgot Password? </span>
+                                <span class="signup" onclick="showSignup()">Not a user? Sign up</span>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="face face-back">
+                        <div class="content">
+                            <h2>Forgot your password?</h2>
+                            <small>Enter your email so we can send you a reset link for your password</small>
+                            <form onsubmit="event.preventDefault()">
+                                <div class="field-wrapper">
+                                    <input type="text" name="email" placeholder="email">
+                                    <label>e-mail</label>
+                                </div>
+                                <div class="field-wrapper">
+                                    <input type="submit" onclick="showThankYou()">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="face face-right">
+                        <div class="content">
+                            <h2>Sign up</h2>
+                            <form onsubmit="event.preventDefault()">
+                                <div class="field-wrapper">
+                                    <input type="text" name="email" placeholder="email">
+                                    <label>e-mail</label>
+                                </div>
+                                <div class="field-wrapper">
+                                    <input type="password" name="password" placeholder="password" autocomplete="new-password">
+                                    <label>password</label>
+                                </div>
+                                <div class="field-wrapper">
+                                    <input type="password" name="password2" placeholder="password" autocomplete="new-password">
+                                    <label>re-enter password</label>
+                                </div>
+                                <div class="field-wrapper">
+                                    <input type="submit" onclick="showThankYou()">
+                                </div>
+                                <span class="singin" onclick="showLogin()">Already a user? Sign in</span>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="face face-left">
+                        <div class="content">
+                            <h2>Contact us</h2>
+                            <form onsubmit="event.preventDefault()">
+                                <div class="field-wrapper">
+                                    <input type="text" name="name" placeholder="name">
+                                    <label>Name</label>
+                                </div>
+                                <div class="field-wrapper">
+                                    <input type="text" name="email" placeholder="email">
+                                    <label>e-mail</label>
+                                </div>
+                                <div class="field-wrapper">
+                                    <textarea placeholder="your message"></textarea>
+                                    <label>your message</label>
+                                </div>
+                                <div class="field-wrapper">
+                                    <input type="submit" onclick="showThankYou()">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="face face-bottom">
+                        <div class="content">
+                            <div class="thank-you-msg">
+                                Thank you!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Simo</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

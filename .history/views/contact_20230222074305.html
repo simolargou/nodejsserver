@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css/contact.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+      
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div class="logo-color">
+                    
+                    <div class="logo">
+                      <img src="img/logo.webp" alt="">
+                  </div>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="/" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="/about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="/skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="/work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="/contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+           
+            <div class="container">
+                <h1 class="maint">Animated Contact Form</h1>
+                <div class="section animated bounceInLeft">
+                    <div class="brandname">
+                        <h3>WEB DEV TRICK</h3>
+                        <ul>
+                            <li> +91 1234567890</li>
+                            <li>contact@webdevtrick.com</li>
+                            <li>webdevtrick.com</li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <h3>Email Me</h3>
+                        <form action="#">
+                            <p>
+                                <label for="#">Name</label>
+                                <input type="text" name="name">
+                            </p>
+                            <p>
+                                <label for="#">Company</label>
+                                <input type="text" name="company">
+                            </p>
+                            <p>
+                                <label for="#">Email Address</label>
+                                <input type="email" name="email">
+                            </p>
+                            <p>
+                                <label for="#">Phone Number</label>
+                                <input type="text" name="phone">
+                            </p>
+                            <p class="full">
+                                <label for="#">Message</label>
+                                <textarea name="message" cols="30" rows="5"></textarea>
+                            </p>
+                            <p class="full">
+                                <button>Submit</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+          
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="js/main.js"></script>
+    </body>
+</html>
