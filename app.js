@@ -1,7 +1,12 @@
-var express = require("express");
- 
+const express = require("express");
+const https = require('https');
 //use the application off of express.
-var app = express();
+const app = express();
+const fs = require('fs');
+const server = https.createServer({
+  key: fs.readFileSync('/etc/ssl/private/ssl-cert-snakeoil.key'),
+  cert: fs.readFileSync('/etc/ssl/certs/ssl-cert-snakeoil.pem')
+}, app);
 
 
 app.use(express.static(__dirname + '/public'));
@@ -22,8 +27,11 @@ app.get("/work", function (request, response){
 app.get("/contact", function (request, response){
     response.sendFile(__dirname+"/views/contact.html");
 });
-
+server.listen(443, () => {
+  console.log('Server running on port 443');
+});
 //start the server
 app.listen(8080);
+app.listen(3000);
 
 console.log("Something awesome to happen at http://localhost:8080");
